@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from models import Enum
+from .models import Enum
 
 
 class Obj(BaseModel):

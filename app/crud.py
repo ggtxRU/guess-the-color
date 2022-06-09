@@ -1,7 +1,7 @@
 import logging
 from sqlalchemy.orm import Session
 
-import models
+from . import models
 
 
 log = logging.getLogger("uvicorn")

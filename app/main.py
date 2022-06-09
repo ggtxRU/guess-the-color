@@ -3,9 +3,9 @@ import logging
 from fastapi import FastAPI
 
 
-import models
-from db import engine
-from api.object import route
+from . import models
+from .db import engine
+from .api.object import route
 
 
 log = logging.getLogger("uvicorn")
@@ -21,7 +21,7 @@ def create_tables() -> None:
 
 def start_app() -> FastAPI:
     app = FastAPI(
-        title="TestAPP",
+        title="GuessTheColor",
         version="0.0.1",
         description="Developer: Kulakov Kirill i.e. ggtx."
     )

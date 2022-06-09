@@ -2,7 +2,7 @@ from enum import Enum as Enum_
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
 
-from db import Base
+from .db import Base
 
 class Enum(Enum_):
     @classmethod
